@@ -7,7 +7,7 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "print(&quot;Welcome to the \&quot;Have a Great Day!\&quot; Program&quot;)\n" +
+  var initial = "print(&quot;Welcome to the &bsol;&quot;Have a Great Day!&bsol;&quot; Program&quot;)\n" +
     "import datetime\n" +
     "year = int(input(&quot;What year (####) were you born? &quot;))\n" +
     "month = int(input(&quot;What month were you born (1-12)? &quot;))\n" +
