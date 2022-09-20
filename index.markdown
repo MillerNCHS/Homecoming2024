@@ -7,13 +7,17 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "color = input(&quot;What color are you going to wear on Monday? &quot;).lower()\n" +
-    "if color == &quot;black:\n" +
-    "	print(&quot;You are a sophomore or a senior.&quot;)\n" +
-    "elif color == &quot;white&quot;:\n" +
-    "	print(&quot;You are a freshman or a junior.&quot;)\n" +
+  var initial = "print(&quot;Welcome to the \&quot;Have a Great Day!\&quot; Program&quot;)\n" +
+    "import datetime\n" +
+    "year = int(input(&quot;What year (####) were you born? &quot;))\n" +
+    "month = int(input(&quot;What month were you born (1-12)? &quot;))\n" +
+    "day = int(input(&quot;What day were you born (1-31)? &quot;))\n" +
+    "myDate = datetime.datetime(year, month, day)\n" +
+    "today = datetime.datetime.today()\n" +
+    "if myDate.month == today.month and myDate.day == today.day:\n" +
+    "	print(&quot;HAPPY BIRTHDAY and have a GREAT DAY!&quot;)\n" +
     "else:\n" +
-    "	print(&quot;Who are you?&quot;)";
+    "	print(&quot;Have a great day!&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
