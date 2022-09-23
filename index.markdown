@@ -7,17 +7,16 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "print(&quot;Welcome to the &bsol;&quot;Have a Great Day!&bsol;&quot; Program&quot;)\n" +
-    "import datetime\n" +
-    "year = int(input(&quot;What year (####) were you born? &quot;))\n" +
-    "month = int(input(&quot;What month were you born (1-12)? &quot;))\n" +
-    "day = int(input(&quot;What day were you born (1-31)? &quot;))\n" +
-    "myDate = datetime.datetime(year, month, day)\n" +
-    "today = datetime.datetime.today()\n" +
-    "if myDate.month == today.month and myDate.day == today.day:\n" +
-    "	print(&quot;HAPPY BIRTHDAY and have a GREAT DAY!&quot;)\n" +
-    "else:\n" +
-    "	print(&quot;Have a great day!&quot;)";
+  var initial = "number = int(input(&quot;Enter a number: &quot;))\n" +
+    "total = 0\n" +
+    "count = 0\n" +
+    "while number:\n" +
+    "  total += int(number)\n" +
+    "  count += 1\n" +
+    "  number = input(&quot;Enter another number (Press &#039;Enter&#039; to Stop): &quot;)\n" +
+    "average = total / count\n" +
+    "print(&quot;The total is &quot;, total)\n" +
+    "print(&quot;The average is &quot;, average)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
