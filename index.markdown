@@ -7,16 +7,15 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "number = int(input(&quot;Enter a number: &quot;))\n" +
-    "total = 0\n" +
-    "count = 0\n" +
-    "while number:\n" +
-    "  total += int(number)\n" +
-    "  count += 1\n" +
-    "  number = input(&quot;Enter another number (Press &#039;Enter&#039; to Stop): &quot;)\n" +
-    "average = total / count\n" +
-    "print(&quot;The total is &quot;, total)\n" +
-    "print(&quot;The average is &quot;, average)";
+  var initial = "color = input(&quot;What color are you wearing today?&quot;).lower()\n" +
+    "if (color == &quot;red&quot;):\n" +
+    "	print(&quot;You are a freshman.&quot;)\n" +
+    "elif (color == &quot;purple&quot;):\n" +
+    "	print(&quot;You are a sophomore.&quot;)\n" +
+    "elif (color == &quot;orange&quot;):\n" +
+    "	print(&quot;You are a junior.&quot;)\n" +
+    "else:\n" +
+    "	print(&quot;You are a senior.&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
